@@ -1,0 +1,43 @@
+body {
+    background-color: #000;
+}
+header {
+    background:repeating-linear-gradient(
+        45deg,
+        #fff
+        #fff 10px,
+        #000 10px,
+        #000 20px
+    );
+    color: #000;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 15px;
+}
+p {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+}
+.hr-button {
+    display: flex;
+    text-align: center;
+    display: flex;
+    color:#000;
+    height: 30px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+.rolinho {
+    width: 50px;
+}
+    
+.rolinho1-section {
+    background-color: #fff;
+}  
