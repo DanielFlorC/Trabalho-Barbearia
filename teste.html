@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Barbearia Estilo</title>
   <style>
     body {
@@ -14,7 +14,7 @@
 
     header {
       background-color: #000;
-      padding: 1rem;
+      padding: 1.5rem;
       text-align: center;
     }
 
@@ -27,7 +27,7 @@
     nav {
       background-color: #333;
       text-align: center;
-      padding: 0.5rem;
+      padding: 0.7rem;
     }
 
     nav a {
@@ -57,12 +57,42 @@
       border-radius: 8px;
     }
 
+    .btn-agendar {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #e0b64b;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+
+    .btn-agendar:hover {
+      background-color: #f5cf63;
+    }
+
     footer {
       background-color: #000;
       text-align: center;
       padding: 1rem;
       color: #aaa;
       font-size: 0.9rem;
+    }
+
+    .botao-agendar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #e0b64b;
+      color: #000;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      
     }
   </style>
 </head>
@@ -75,13 +105,13 @@
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
-    <a href="#galeria">Galeria</a>
+    <a href="#agendamento">Agendamento</a>
     <a href="#contato">Contato</a>
   </nav>
 
   <section id="sobre">
     <h2>Sobre Nós</h2>
-    <p>Bem-vindo à Barbearia Estilo, onde tradição e estilo se encontram. Com anos de experiência, oferecemos cortes modernos, clássicos e um atendimento personalizado.</p>
+    <p>Bem-vindo à Barbearia Estilo, onde tradição encontra o estilo moderno. Profissionais experientes e um ambiente acolhedor para te atender.</p>
   </section>
 
   <section id="servicos">
@@ -102,23 +132,38 @@
     </div>
   </section>
 
-  <section id="galeria">
-    <h2>Galeria</h2>
-    <p>Em breve, fotos do nosso espaço e dos nossos cortes.</p>
+  <section id="agendamento">
+    <h2>Agende seu horário</h2>
+    <p>Você será redirecionado para nossa página de agendamentos no Booksy.</p>
+
+    <!-- 🔁 Substitua o link abaixo pelo seu link real do Booksy -->
+    <a href="https://booksy.com/pt-br/123456/barbearia-estilo/service" 
+       target="_blank" 
+       class="btn-agendar">
+      Agendar Online via Booksy
+    </a>
   </section>
 
   <section id="contato">
     <h2>Contato</h2>
-    <p>📍 Rua das Navalhas, 123 - Centro<br>
-       📞 (11) 91234-5678<br>
-       💬 WhatsApp: (11) 98765-4321<br>
-       📧 contato@barbeariaestilo.com
+    <p>
+      📍 Rua das Navalhas, 123 - Centro<br>
+      📞 (11) 91234-5678<br>
+      💬 WhatsApp: (11) 98765-4321<br>
+      📧 contato@barbeariaestilo.com
     </p>
   </section>
 
   <footer>
     <p>&copy; 2025 Barbearia Estilo. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Botão flutuante de agendamento -->
+  <a href="https://booksy.com/pt-br/123456/barbearia-estilo/service" 
+     target="_blank" 
+     class="botao-agendar">
+    Agendar Horário
+  </a>
 
 </body>
 </html>
