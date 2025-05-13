@@ -56,13 +56,16 @@ main {
 }
 .Rocha {
     width: 150px;
+    height: 150px;
+    object-fit: cover;
     display: flex;
-    top: 100px;
+    top: 130px;
     margin: -140px 0 0 45px;
-    border-radius: 40px;
+    border-radius: 50%;
     margin-left: 45px;
     gap: 30px;
     position: relative;
+    
 }
 .menu {
     display: flex;
