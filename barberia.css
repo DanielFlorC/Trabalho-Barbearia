@@ -1,8 +1,9 @@
 body {
-    background-color: #000;
+    background-color: #1f1f1f;
     margin: auto;
 }
 header {
+    
     background:repeating-linear-gradient(
         45deg,
         #fff
@@ -14,35 +15,8 @@ header {
     text-align: center;
     padding: 40px 0;
     background-color: #fff;
+    
 }
-main {
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    font-family: 'Segoe, sans-serif';
-}
-.hr-button {
-    cursor: pointer;
-    transition: background 0.2s,color 0.2s,box-shadow 0.2s;
-    display: flex;
-    text-align: center;
-    color:#000;
-    height: 30px;
-    width: 100px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    border-radius: 10px;
-    font-size: 15px;
-    background-color: #fff;
-    font-family: 'Rye',cursive;
-}
-.hr-button:hover {
-    background-color: #222;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
 .rolinho { 
     width: 100px; 
     
@@ -69,18 +43,35 @@ main {
 }
 .menu {
     display: flex;
-    gap: 40px;
+    gap: 80px;
     justify-content: center;
+    
     
 }
 .menu-link {
-    
-    color:#222;
+   color:#222;
     text-decoration: none;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     transition: color 0.2s;
+    
 }
+
+.botao-agendar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e0b64b;
+    color:#000;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+
     
 
  
