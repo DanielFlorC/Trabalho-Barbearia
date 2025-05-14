@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agendar Horario</title>
     <link rel="stylesheet" href="agendar.css">
 </head>
 <body>
-   <form action="agendar.html" method="post">
-        <h1>Preencha o Formulario </h1>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+    <header>
+        
+        <img src="Rocha.jpg" alt="imagem Rocha " class="Rocha">
+        <nav class="menu">
+            <a href="Barbearia." class="menu-link">Início</a>
+        </nav>
+    </header>
+    <form action="Obrigado.html" method="get">
+        <div class="Form-Nome">
+            <label for="Nome" class="Nome">Nome:</label>
+            <input type="text" class="Nome-caixa" id="Nome" placeholder="Digite seu nome:" required>
+        </div>
+        <div class="Form-Email">
+            <label for="Email" class="Email">Email</label>
+            <input type="email" class="Email-caixa" id="Email" placeholder="Digite seu email:"required>
+        </div>
+        <div class="Form-Telefone">
+            <label for="Telefone" class="Telefone">Telefone</label>
+            <input type="tel" class="Telefone-caixa" id="Telefone" placeholder="Digite seu telefone:"required>
+        </div>
+        <div class="Form-Data">
+            <label for="data-agendamento" class="Data">Data</label>
+            <input type="date" id="data-agendamento" required>
+        </div>
+        <div>
+            <input class="Botao-enviar" type="submit" name="enviar" id="enviar">
+        </div>
     </form>
 </body>
 </html>
