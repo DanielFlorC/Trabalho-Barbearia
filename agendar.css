@@ -1,12 +1,39 @@
-label {
-    font-family: Arial, sans-serif;
-    border-radius: 10px;
+body {
+    background-color: #1f1f1f;
+    margin: auto;
+}
+header {
+    
+    background:repeating-linear-gradient(
+        45deg,
+        #fff
+        #fff 10px,
+        #000 10px,
+        #000 20px
+    );
+    color: #000;
+    text-align: right;
+    padding: 40px 0;
+    background-color: #fff;
     
 }
-input {
-    font-family: Arial, sans-serif;
-    border-radius: 10px;
-    padding: 10px;
-    width: 17%;
-    
+.Rocha {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: flex;
+    top: 130px;
+    margin: -140px 0 0 45px;
+    border-radius: 50%;
+    margin-left: 45px;
+    gap: 30px;
+    position: relative;
+}
+.menu-link {
+  padding-right: 200px;
+    color:#222;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 25px;
+    transition: color 0.2s;
 }

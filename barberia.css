@@ -17,17 +17,6 @@ header {
     background-color: #fff;
     
 }
-.rolinho { 
-    width: 100px; 
-    
-    }
-.topo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    gap: 30px;
-}
 .Rocha {
     width: 150px;
     height: 150px;
@@ -50,7 +39,7 @@ header {
     
 }
 .menu-link {
-   color:#222;
+    color:#222;
     text-decoration: none;
     font-family: 'poppins', sans-serif;
     font-size: 25px;
