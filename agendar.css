@@ -31,23 +31,118 @@ header {
     border: 4px solid;
 }
 .menu-link {
-    padding-right: 200px;
-    color:#222;
     text-decoration: none;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 25px;
+    font-family:'montserrat',sans-serif;
+    font-size: 23px;
     transition: color 0.2s;
-    
+    background: #000 ;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+    margin-right: 100px;
 }
 .formulario{
-    background-color: #e0b64b;
-    text-align: center;
+    background-color: #b5b5b5;
     border-radius: 10px;
     margin-top: 100px;
-    padding: 10px
-    
+    padding: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-family: 'Segoe UI';
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 130px;
+}
+.formulario label{
+    text-align: right;
+    margin-right: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    border-color: #4CAF50; /* Verde, como você gosta! */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+.Botao-enviar {
+    margin-left: 95px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.Botao-enviar:hover {
+    background-color: #a7852d;
 }
 
 
 
 
+
+
+footer {
+    background-color: #fff;
+    margin-top: 65px;
+    text-align: center;
+    color: #000;
+    font-family: "Montserrat",sans-serif;
+    
+}
+footer a {
+
+    color: #000;
+    text-decoration: none;
+    gap: 50px;
+    justify-content: center;
+    
+}
+.social-media {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+ #mensagem {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente */
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Caixa central da mensagem */
+    #mensagem .conteudo {
+      background-color: #4caf50;
+      color: white;
+      padding: 30px 50px;
+      border-radius: 15px;
+      font-size: 24px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
