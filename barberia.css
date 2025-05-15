@@ -92,10 +92,16 @@ footer {
     
 }
 footer a {
-    
+
     color: #000;
     text-decoration: none;
     gap: 50px;
     justify-content: center;
     
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
