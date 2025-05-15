@@ -44,9 +44,10 @@ header {
     font-family: 'poppins', sans-serif;
     font-size: 25px;
     transition: color 0.2s;
-    background: #e0b64b ;
+    background: #000 ;
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
+    color: #fff;
     
     
 }
