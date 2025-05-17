@@ -12,7 +12,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-   
+    color: #fff;
+    ;
 }
 header {
     
@@ -89,6 +90,11 @@ header {
     font-family: 'Segoe UI', sans-serif;
     z-index: 1001;
 }
+.botao-agendar:hover{
+    background-color: #f5cf63;
+    transition: background 0.3;
+
+}
 footer {
     width: 100%;
     background-color: #fff;
@@ -129,6 +135,25 @@ footer a {
     text-decoration: none;
     font-size: 18px;
 }
+section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .servicos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+
+    .servico {
+      flex: 1 1 250px;
+      background: #2d2d2d;
+      padding: 1rem;
+      border-radius: 8px;
+    }
 
 
 
