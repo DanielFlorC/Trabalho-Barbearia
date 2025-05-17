@@ -52,9 +52,7 @@ header {
     display: flex;
     gap: 70px;
     justify-content: center;
-    
-    
-}
+    }
 .menu-link {
     color:#222;
     text-decoration: none;
@@ -99,7 +97,7 @@ footer {
     color: #000;
     font-family: "Montserrat",sans-serif;
     box-sizing: border-box;
-    padding: 20px ;
+    padding: 8px 0;
 }
 footer a {
 
@@ -131,12 +129,7 @@ footer a {
     text-decoration: none;
     font-size: 18px;
 }
-.social-media {
-    display:flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
+
 
 
 

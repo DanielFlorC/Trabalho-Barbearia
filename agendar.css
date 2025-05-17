@@ -21,9 +21,10 @@ header {
     );
     color: #000;
     text-align: right;
-    padding: 40px 0;
+    padding: 20px 0;
     background-color: #fff;
-    
+    width: 100%;
+    top: 0;
 }
 .Rocha {
     width: 150px;
@@ -38,6 +39,12 @@ header {
     position: relative;
     border: 4px solid;
 }
+.menu {
+    display: flex;
+    gap: 70px;
+    justify-content: end;
+}
+
 .menu-link {
     text-decoration: none;
     font-family:'montserrat',sans-serif;
@@ -111,11 +118,14 @@ input[type="date"]:focus {
 
 
 footer {
+    width: 100%;
     background-color: #fff;
     margin-top: auto;
     text-align: center;
     color: #000;
     font-family: "Montserrat",sans-serif;
+    padding: 8px 0;
+    box-sizing: border-box;
     
 }
 footer a {
@@ -145,7 +155,7 @@ footer a {
     }
 
     /* Caixa central da mensagem */
-    #mensagem .conteudo {
+#mensagem .conteudo {
       background-color: #4caf50;
       color: white;
       padding: 30px 50px;
@@ -153,4 +163,26 @@ footer a {
       font-size: 24px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
       text-align: center;
-    }
+ }
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.social-insta a {
+    background-color: #E1306C; 
+    color: #fff; 
+    padding: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
+.social-whats a {
+    background-color: #25D366; 
+    color: #fff; 
+    padding: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
