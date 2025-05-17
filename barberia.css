@@ -1,9 +1,9 @@
 html,body {
-    
+
     height: 100%;
     margin: 0;
     padding: 0;
-    
+
 }
 body {
     background-color: #1f1f1f;
@@ -65,9 +65,9 @@ header {
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     color: #fff;
-    
+
     text-align: center;
-    
+
 }
 
 .menu-link:hover {
@@ -89,14 +89,17 @@ header {
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     font-family: 'Segoe UI', sans-serif;
+    z-index: 1001;
 }
 footer {
+    width: 100%;
     background-color: #fff;
     margin-top: auto;
     text-align: center;
     color: #000;
     font-family: "Montserrat",sans-serif;
-    
+    box-sizing: border-box;
+    padding: 20px ;
 }
 footer a {
 
@@ -112,9 +115,28 @@ footer a {
     gap: 10px;
     margin-top: 10px;
 }
-
-
-
+.social-insta a {
+    background-color: #E1306C; 
+    color: #fff; 
+    padding: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
+.social-whats a {
+    background-color: #25D366; 
+    color: #fff; 
+    padding: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
+.social-media {
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
 
 
 
