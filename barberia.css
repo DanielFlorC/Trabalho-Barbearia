@@ -1,4 +1,5 @@
 html,body {
+    
     height: 100%;
     margin: 0;
     padding: 0;
@@ -6,8 +7,8 @@ html,body {
 }
 body {
     background-color: #1f1f1f;
-    margin: auto;
-    padding-top: 120px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 180px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,10 +33,12 @@ header {
     
 }
 .Rocha {
+    margin: 0 auto;
+    position: static;
     width: 150px;
     height: 150px;
     object-fit: cover;
-    display: flex;
+    display: block;
     top: 130px;
     margin: -140px 0 0 45px;
     border-radius: 50%;
@@ -45,7 +48,7 @@ header {
     border: 4px solid  ;
     
 }
-.menu {
+ .menu {
     display: flex;
     gap: 70px;
     justify-content: center;
@@ -63,11 +66,15 @@ header {
     padding: 10px 10px 10px 10px;
     color: #fff;
     
+    text-align: center;
+    
 }
+
 .menu-link:hover {
     color:#fff;
     background: #e0b64b;
     transition: color 0.3;
+    transform: scale(1.1);
 }
 
 .botao-agendar {
@@ -82,7 +89,7 @@ header {
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     font-family: 'Segoe UI', sans-serif;
-    }
+}
 footer {
     background-color: #fff;
     margin-top: auto;
@@ -105,3 +112,21 @@ footer a {
     gap: 10px;
     margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

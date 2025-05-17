@@ -1,6 +1,14 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
+    display: flex;
     background-color: #1f1f1f;
     margin: auto;
+    min-height: 100vh;
+    flex-direction: column;
 }
 header {
     
@@ -104,7 +112,7 @@ input[type="date"]:focus {
 
 footer {
     background-color: #fff;
-    margin-top: 65px;
+    margin-top: auto;
     text-align: center;
     color: #000;
     font-family: "Montserrat",sans-serif;
