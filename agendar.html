@@ -22,13 +22,22 @@
                 <label for="Nome" class="Nome">Nome</label>
                 <input type="text" class="Nome-caixa" id="Nome" placeholder="Digite seu nome:" required>
             </div>
-            <div class="Form-Email">
-                <label for="Email" class="Email">Email</label>
-                <input type="email" class="Email-caixa" id="Email" placeholder="Digite seu email:"required>
-            </div>
             <div class="Form-Telefone">
                 <label for="Telefone" class="Telefone">Telefone</label>
                 <input type="tel" class="Telefone-caixa" id="Telefone" placeholder="Digite seu telefone:"required>
+            </div>
+            <div>
+                <label for="servico" class="caixa-servico">Serviços</label>
+                <select name="servico" id="servico" required>
+                    <option value="">Selecione o serviço</option>
+                    <option value="corte">Corte R$25,00</option>
+                    <option value="corte+barba">Corte + Barba R$40,00</option>
+                    <option value="sobrancelha">Sobrancelha R$5,00</option>
+                    <option value="barboterapia">Barboterapia R$35,00</option>
+                    <option value="corte+barboterapia">Corte + Barboterapia R$50,00</option>
+                    <option value="corteInfantil">Corte infantil R$30,00</option>
+                    <option value="limpezaDePele">Limpeza de pele R$20,00</option>
+                </select>
             </div>
             <div class="Form-Data">
                 <label for="data-agendamento" class="Data">Data</label>
