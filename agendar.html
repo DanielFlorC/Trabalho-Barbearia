@@ -17,20 +17,20 @@
         </nav>
     </header>
     <section class="formulario">
-        <form id="meuFormulario" action="Obrigado.html" method="get">
-            <div class="Form-Nome">
+        <form id="meuFormulario" action="Obrigado.html" method="get" class="formulario1">
+            <div class="campos">
                 <label for="Nome" class="Nome">Nome</label>
                 <input type="text" class="Nome-caixa" id="Nome" placeholder="Digite seu nome:" required>
             </div>
-            <div class="Form-Telefone">
+            <div class="campos">
                 <label for="Telefone" class="Telefone">Telefone</label>
-                <input type="tel" class="Telefone-caixa" id="Telefone" placeholder="Digite seu telefone:"required>
+                <input type="tel" class="Telefone-caixa" id="Telefone" placeholder="(99) 99999-9999"required>
             </div>
-            <div class="Form-Data">
+            <div class="campos">
                 <label for="data-agendamento" class="Data">Data</label>
                 <input type="date" id="data-agendamento" required>
             </div>
-            <div>
+            <div class="campos">
                 <label for="servico" class="caixa-servico">Serviços</label>
                 <select name="servico" id="servico" required>
                     <option value="">Selecione o serviço</option>
@@ -43,7 +43,7 @@
                     <option value="limpezaDePele">Limpeza de pele R$20,00</option>
                 </select>
             </div>
-            <div>
+            <div class="campos">
                 <input class="Botao-enviar" type="submit" name="enviar" id="enviar">
             </div>
         </form>
