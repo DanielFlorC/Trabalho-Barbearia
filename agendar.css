@@ -6,7 +6,7 @@ html,body {
 }
 body {
     display: flex;
-    background-color: #1f1f1f;
+    background-color: #fff;
     margin: auto;
     min-height: 100vh;
     flex-direction: column;
@@ -23,7 +23,7 @@ header {
     color: #000;
     text-align: right;
     padding: 20px 0;
-    background-color: #fff;
+    background-color: #000;
     width: 100%;
     top: 0;
 }
@@ -48,7 +48,7 @@ header {
 
 .menu-link {
     text-decoration: none;
-    font-family:'montserrat',sans-serif;
+    font-family:'Inter',sans-serif;
     font-size: 23px;
     transition: color 0.2s;
     background: #000 ;
@@ -56,6 +56,12 @@ header {
     padding: 10px 10px 10px 10px;
     color: #fff;
     margin-right: 100px;
+}
+.menu-link:hover {
+    color:#222;
+    background: #e0b64b;
+    transition: color 0.3s;
+    transform: scale(1.1);
 }
 .formulario{
     background-color: #b5b5b5;
@@ -128,10 +134,10 @@ select:focus{
 }
 footer {
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     margin-top: auto;
     text-align: center;
-    color: #000;
+    color: #fff;
     font-family: "Inter",sans-serif;
     padding: 8px 0;
     box-sizing: border-box;
