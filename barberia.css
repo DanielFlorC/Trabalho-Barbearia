@@ -71,7 +71,8 @@ header {
 }
 
 .menu-link:hover {
-    color:#fff;
+
+    color:#222;
     background: #e0b64b;
     transition: color 0.3;
     transform: scale(1.1);
@@ -90,6 +91,19 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     font-family: 'Inter', sans-serif;
     z-index: 1001;
+    animation: pulse 3s infinite;
+    font-size: 15px;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 .botao-agendar:hover{
     background-color: #f5cf63;
@@ -97,11 +111,12 @@ header {
 
 }
 footer {
+    
     width: 100%;
     background-color: #fff;
     margin-top: auto;
     text-align: center;
-    color: #000;
+    color: #222;
     font-family: "Inter",sans-serif;
     box-sizing: border-box;
     padding: 8px 0;
