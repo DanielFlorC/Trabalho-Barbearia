@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 html,body {
 
     height: 100%;
@@ -7,7 +8,7 @@ html,body {
 }
 body {
     background-color: #1f1f1f;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding-top: 180px;
     min-height: 100vh;
     display: flex;
@@ -57,7 +58,7 @@ header {
 .menu-link {
     color:#222;
     text-decoration: none;
-    font-family:'montserrat',sans-serif;
+    font-family:'Inter',sans-serif;
     font-size: 23px;
     transition: color 0.2s;
     background: #000 ;
@@ -87,7 +88,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
     z-index: 1001;
 }
 .botao-agendar:hover{
@@ -101,7 +102,7 @@ footer {
     margin-top: auto;
     text-align: center;
     color: #000;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Inter",sans-serif;
     box-sizing: border-box;
     padding: 8px 0;
 }
@@ -163,7 +164,41 @@ section {
 
 
 
-
+@media (max-width: 800px) {
+    header {
+        padding: 5px 0;
+    }
+    body {
+        padding-top: 80px;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .menu-link {
+        width: 90vw;
+        font-size: 18px;
+        padding: 12px 0;
+        margin: 0;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .servicos {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .tabela table {
+        width: 100%;
+        font-size: 14px;
+    }
+    .botao-agendar {
+        right: 10px;
+        bottom: 10px;
+        padding: 0.7rem 1rem;
+        font-size: 15px;
+    }
+}
 
 
 
