@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="agendar.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <header>
-        
         <img src="Rocha.jpg" alt="imagem Rocha " class="Rocha">
         <nav class="menu">
             <a href="Barbearia.html" class="menu-link">Início</a>
@@ -27,8 +27,8 @@
                 <input type="tel" class="Telefone-caixa" id="Telefone" placeholder="(99) 99999-9999"required>
             </div>
             <div class="campos">
-                <label for="data-agendamento" class="Data">Data</label>
-                <input type="date" id="data-agendamento" required>
+                <label for="Data" class="Data">Data</label>
+                <input type="text" id="data-agendamento" placeholder="dd / mm / aaaa" required>
             </div>
             <div class="campos">
                 <label for="servico" class="caixa-servico">Serviços</label>
@@ -47,6 +47,25 @@
                 <input class="Botao-enviar" type="submit" name="enviar" id="enviar">
             </div>
         </form>
+        <!-- Flatpickr JS -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <!-- Flatpickr idioma PT-BR -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+        <script>
+            flatpickr("#data-agendamento", {
+                dateFormat: "d/m/Y",
+                locale: "pt",
+                minDate: "today", // impede dias anteriores a hoje
+                disable: [
+                function(date) {
+                    // Desativa domingo (0) e segunda-feira (1)
+                    return (date.getDay() === 0 || date.getDay() === 1);
+                }
+                ]
+            });
+        </script>
+
+
 
         <div id="mensagem">
             <div class="conteudo">Enviado com sucesso!</div>
@@ -68,7 +87,14 @@
             });
         </script>
     </section>
-
+    <section class="horario">
+        <div class="horario-funcionamento">
+            <h3>⏰ Horário de funcionamento:</h3>
+            <p>De terça a sábado</p>
+            <p>Das 08h às 12h e das 13h às 18h</p>
+            <p>Esperamos por você na Rocha Barbearia!</p>
+        </div>
+    </section>
     <footer>
         <p>&copy; 2023 Rocha Barbearia. Todos os direitos reservados.</p>
         <p id="contato">Entre em contato:</p>
