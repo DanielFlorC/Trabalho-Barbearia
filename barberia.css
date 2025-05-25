@@ -12,18 +12,17 @@ body {
     display: flex;
     flex-direction: column;
     color: #000;
-    background-image:url() ;    
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(0,0,0,0.7);
+    background-image:url(cabelo.avif);   
+    background-size: 100%;
     background-repeat: no-repeat;
-    width: 100vw;
 }
 header {
     color: #000;
     text-align: center;
     padding: 20px 0;
-    background-color: #000;
-    position:absolute;
+    background-color: rgba(0,0,0,0.9);
+    position:fixed;
     width: 100%;
     top:0px;
     }
@@ -49,7 +48,6 @@ header {
     font-family:'Inter',sans-serif;
     font-size: 23px;
     transition: color 0.2s;
-    background: #000 ;
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     color: #fff;
@@ -199,9 +197,7 @@ section {
    
 
 .meu-video {
-
-        margin-left: 1020px;
-        margin-top: 50px; 
+        margin: 200px 140px 0 auto;
         border: 5px solid #b5bdc2;
         border-radius: 15px;
         box-shadow:0 4px 8px rgba (0,0,2,7.6);
