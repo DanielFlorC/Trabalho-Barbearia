@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 html,body {
-
     height: 100%;
     margin: 0;
     padding: 0;
-
 }
 body {
     background-color: #fff;
@@ -14,17 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     color: #000;
-    ;
-}
+    }
 header {
-    
-    background:repeating-linear-gradient(
-        45deg,
-        #fff
-        #fff 10px,
-        #000 10px,
-        #000 20px
-    );
     color: #000;
     text-align: center;
     padding: 20px 0;
@@ -32,24 +21,18 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    
-}
+    }
 .Rocha {
-    margin: 0 auto;
-    position: static;
     width: 150px;
     height: 150px;
-    object-fit: cover;
-    display: block;
+    display: flex;
     top: 130px;
-    margin: -140px 0 0 45px;
+    margin: -140px 0 0 100px;
     border-radius: 50%;
-    margin-left: 45px;
     gap: 30px;
-    position: relative;
-    border: 4px solid  ;
-    
-}
+    position:relative;
+    border: 5px solid ;
+    }
  .menu {
     display: flex;
     gap: 70px;
