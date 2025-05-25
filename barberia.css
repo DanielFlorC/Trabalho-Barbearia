@@ -12,15 +12,20 @@ body {
     display: flex;
     flex-direction: column;
     color: #000;
-    }
+    background-image:url() ;    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
 header {
     color: #000;
     text-align: center;
     padding: 20px 0;
     background-color: #000;
-    position: fixed;
+    position:absolute;
     width: 100%;
-    top: 0;
+    top:0px;
     }
 .Rocha {
     width: 150px;
@@ -48,13 +53,10 @@ header {
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     color: #fff;
-
     text-align: center;
-
 }
 
 .menu-link:hover {
-
     color:#222;
     background: #e0b64b;
     transition: color 0.3;
@@ -94,7 +96,6 @@ header {
 
 }
 footer {
-    
     width: 100%;
     background-color: #000;
     margin-top: auto;
@@ -102,10 +103,9 @@ footer {
     color: #fff;
     font-family: "Inter",sans-serif;
     box-sizing: border-box;
-    padding: 8px 0;
+    padding: 10px 0;
 }
 footer a {
-
     color: #000;
     text-decoration: none;
     gap: 50px;
@@ -198,16 +198,9 @@ section {
     } 
 } 
 
-    body { 
-        width: 100vw;
-        height: 100vh;
-        background-image:url(https://st4.depositphotos.com/1001951/23164/i/450/depositphotos_231646636-stock-photo-clients-in-barbershop.jpg) ;
-        background-size: 100%;
-        background-repeat: no-repeat;
+   
 
-    } 
-
-    .meu-video {
+.meu-video {
 
         margin-left: 1020px;
         margin-top: 50px; 
