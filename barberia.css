@@ -357,9 +357,42 @@ th {
 }
 
 
+.icon-servico {
+  font-size: 30px;
+  color: #b58b00;
+  margin-bottom: 10px;
+}
 
 
 
 
+.servicos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.servico-card {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.servico-card:hover {
+  transform: scale(1.05);
+}
+
+.icon-servico {
+  font-size: 30px;
+  color: #b58b00;
+  margin-bottom: 10px;
+}
 
 
