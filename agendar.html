@@ -13,10 +13,37 @@
     <header>
         <img src="Rocha.jpg" alt="imagem Rocha " class="Rocha">
         <nav class="menu">
-            <a href="Barbearia.html" class="menu-link">Início</a>
+        <a href="Barbearia.html" class="menu-linki">Início</a>
+        <a href="Barbearia.html"class="menu-link">Serviços</a>
+        <a href="#contato"class="menu-link">Contatos</a>
+        <a href="Barbearia.html"class="menu-link">Sobre</a>
+        <a href="https://www.google.com/maps/place/R.+Maria+Batista+Rodrigues,+109+-+Jardim+Sao+Paulo,+Jo%C3%A3o+Pessoa+-+PB,+58053-115/@-7.1529071,-34.845633,17z/data=!3m1!4b1!4m6!3m5!1s0x7acc28de30ee8d9:0x21828b12331140ee!8m2!3d-7.1529071!4d-34.845633!16s%2Fg%2F11tnw2h9jj?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="menu-link">Localização</a>
         </nav>
     </header>
-    <section class="formulario">
+<div class="container">
+    <!-- Coluna da esquerda (Avaliações) -->
+    <div class="left-column">
+        <div class="card">
+            <h4>Carlos O.</h4>
+            <div class="stars">★★★★★</div>
+            <p>"Atendimento excelente, voltarei com certeza!"</p>
+        </div>
+
+        <div class="card">
+            <h4>Ana P.</h4>
+            <div class="stars">★★★★☆</div>
+            <p>"Serviço rápido e eficiente."</p>
+        </div>
+
+        <div class="card">
+            <h4>Paulo L.</h4>
+            <div class="stars">★★★★★</div>
+            <p>"Barboterapia muito relaxante!! 10/10"</p>
+        </div>
+    </div>
+
+    <!-- Coluna do meio (Formulário) -->
+    <div class="formulario">
         <h1>Agende seu horário</h1>
         <form id="meuFormulario" action="Obrigado.html" method="get" class="formulario1">
             <div class="campos">
@@ -25,7 +52,7 @@
             </div>
             <div class="campos">
                 <label for="Telefone" class="Telefone">Telefone</label>
-                <input type="tel" class="Telefone-caixa" id="Telefone" placeholder="(99) 99999-9999"required>
+                <input type="tel" class="Telefone-caixa" id="Telefone" placeholder="(99) 99999-9999" required>
             </div>
             <div class="campos">
                 <label for="Data" class="Data">Data</label>
@@ -45,57 +72,70 @@
                 </select>
             </div>
             <div class="campos">
+                <label for="servico" class="caixa-servico">Horarios</label>
+                <select name="horarios" id="horarios" required>
+                    <option value="">Selecione o Horario</option>
+                    <option value="">08:00 - 09:00</option>
+                    <option value="">09:00 - 10:00</option>
+                    <option value="">10:00 - 11:00</option>
+                    <option value="">11:00 - 12:00</option>
+                    <option value="">13:00 - 14:00</option>
+                    <option value="">14:00 - 15:00</option>
+                    <option value="">15:00 - 16:00</option>
+                    <option value="">16:00 - 17:00</option>
+                    <option value="">17:00 - 18:00</option>
+                </select>
+            </div>
+            <div class="campos">
                 <input class="Botao-enviar" type="submit" name="enviar" id="enviar">
             </div>
         </form>
-        <!-- Flatpickr JS -->
-        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-        <!-- Flatpickr idioma PT-BR -->
-        <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
-        <script>
-            flatpickr("#data-agendamento", {
-                dateFormat: "d/m/Y",
-                locale: "pt",
-                minDate: "today", // impede dias anteriores a hoje
-                disable: [
-                function(date) {
-                    // Desativa domingo (0) e segunda-feira (1)
-                    return (date.getDay() === 0 || date.getDay() === 1);
-                }
-                ]
-            });
-        </script>
-
-
 
         <div id="mensagem">
             <div class="conteudo">Enviado com sucesso!</div>
         </div>
+    </div>
 
-        <script>
-            const formulario = document.getElementById('meuFormulario');
-            const mensagem = document.getElementById('mensagem');
-
-            formulario.addEventListener('submit', function(e) {
-            e.preventDefault(); // Impede o envio padrão
-
-            mensagem.style.display = 'flex'; // Exibe a mensagem
-
-            // Espera 3 segundos e redireciona
-            setTimeout(() => {
-                window.location.href = "Barbearia.html"; // Troque para o link desejado
-            }, 3000);
-            });
-        </script>
-    </section>
-    <section class="horario">
-        <div class="horario-funcionamento">
-            <h3>⏰ Horário de funcionamento:</h3>
+    <!-- Coluna da direita (Horário) -->
+    <div class="right-column">
+        <div class="card">
+            <h4>⏰ Horário de funcionamento:</h4>
             <p>De terça a sábado</p>
             <p>Das 08h às 12h e das 13h às 18h</p>
             <p>Esperamos por você na Rocha Barbearia!</p>
         </div>
-    </section>
+    </div>
+</div>
+
+<!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+<script>
+    flatpickr("#data-agendamento", {
+        dateFormat: "d/m/Y",
+        locale: "pt",
+        minDate: "today",
+        disable: [
+            function(date) {
+                return (date.getDay() === 0 || date.getDay() === 1);
+            }
+        ]
+    });
+</script>
+
+<script>
+    const formulario = document.getElementById('meuFormulario');
+    const mensagem = document.getElementById('mensagem');
+
+    formulario.addEventListener('submit', function(e) {
+        e.preventDefault();
+        mensagem.style.display = 'flex';
+        setTimeout(() => {
+            window.location.href = "Barbearia.html";
+        }, 3000);
+    });
+</script>
+
     <footer>
         <p>&copy; 2023 Rocha Barbearia. Todos os direitos reservados.</p>
         <p id="contato">Entre em contato:</p>
