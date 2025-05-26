@@ -320,6 +320,55 @@ th {
     }
 
 
+/* Novo estilo para cards */
+.servicos-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.servicos-section h1 {
+  color: #b58b00;
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.servicos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.servico-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 220px;
+  transition: transform 0.2s ease;
+}
+
+.servico-card:hover {
+  transform: scale(1.05);
+}
+
+.servico-card h3 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.servico-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+
 
 
 
