@@ -3,26 +3,28 @@ html,body {
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body {
+    padding-top: 50px;
+    display: flex;
     background-color: #fff;
     font-family: 'Inter', sans-serif;
-    padding-top: 180px;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
     color: #000;
-    background-color: rgba(0,0,0,0.7);
-    background-image:url(cabelo.avif);   
-    background-size: 100%;
+    background-image:url() ;    
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    width: 100vw;
 }
 header {
     color: #000;
     text-align: center;
     padding: 20px 0;
-    background-color: rgba(0,0,0,0.9);
-    position:fixed;
+    background-color: #000;
+    position:absolute;
     width: 100%;
     top:0px;
     }
@@ -36,12 +38,24 @@ header {
     gap: 30px;
     position:relative;
     border: 5px solid ;
+    
     }
  .menu {
     display: flex;
     gap: 70px;
     justify-content: center;
     }
+.menu-linki {
+    color:#222;
+    text-decoration: none;
+    font-family:'Inter',sans-serif;
+    font-size: 23px;
+    transition: color 0.2s;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    color: #e0b64b;
+    text-align: center;
+}
 .menu-link {
     color:#222;
     text-decoration: none;
@@ -194,16 +208,101 @@ section {
     } 
 } 
 
-   
-
 .meu-video {
         margin: 200px 140px 0 auto;
         border: 5px solid #b5bdc2;
         border-radius: 15px;
         box-shadow:0 4px 8px rgba (0,0,2,7.6);
     }
- 
 
+
+h1 {
+    font-size: 24px;
+    color: #a67c00;
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+#sobre-nos {
+  width: 100vw;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+#sobre-nos .container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.image img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    border: 3px solid;
+    margin: 190px auto;
+ }
+#sobre-nos .text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+#sobre-nos h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+#sobre-nos p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+#sobre-nos .slogan {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#sobre-nos .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #f25c2e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#sobre-nos .btn:hover {
+  background-color: #d94f1e;
+}
 
 
 
