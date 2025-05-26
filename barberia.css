@@ -3,6 +3,7 @@ html,body {
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #fff;
@@ -196,8 +197,6 @@ section {
     } 
 } 
 
-   
-
 .meu-video {
 
         margin-left: 1020px;
@@ -206,8 +205,96 @@ section {
         border-radius: 15px;
         box-shadow:0 4px 8px rgba (0,0,2,7.6);
     }
- 
 
+
+h1 {
+    font-size: 24px;
+    color: #a67c00;
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+#sobre-nos {
+  width: 100vw;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+#sobre-nos .container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#sobre-nos .image img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 3px solid #eee;
+  background-color: #fff;
+}
+
+#sobre-nos .text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+#sobre-nos h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+#sobre-nos p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+#sobre-nos .slogan {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#sobre-nos .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #f25c2e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#sobre-nos .btn:hover {
+  background-color: #d94f1e;
+}
 
 
 
