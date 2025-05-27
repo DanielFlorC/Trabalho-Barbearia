@@ -26,23 +26,27 @@ header {
     position:fixed;
     width: 100%;
     top:0px;
+    height: 60px;
+    align-items: center;
     }
 .Rocha {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    top: 130px;
-    margin: -140px 0 0 100px;
+    width: 140px;
+    height: 140px;
+    top: 5px;
+    left: 60px;
     border-radius: 50%;
     gap: 30px;
-    position:relative;
+    position:absolute;
     border: 5px solid ;
-    
+    z-index: 101;
     }
  .menu {
     display: flex;
     gap: 70px;
     justify-content: center;
+    z-index: 2;
+    position: relative;
+    padding-left: 60px;
     }
 .menu-linki {
     color:#222;
