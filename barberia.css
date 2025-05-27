@@ -23,7 +23,7 @@ header {
     text-align: center;
     padding: 20px 0;
     background-color: rgba(0,0,0,0.9);
-    position:absolute;
+    position:fixed;
     width: 100%;
     top:0px;
     }
@@ -162,14 +162,6 @@ section {
       border-radius: 8px;
     }
 
-
-
-
-
-
-
-
-
 @media (max-width: 800px) {
     header {
         padding: 5px 0;
@@ -234,8 +226,7 @@ h1 {
   padding: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  margin: 0 80px;
   gap: 40px;
   flex-wrap: wrap;
 }
@@ -287,9 +278,6 @@ h1 {
 #sobre-nos .btn:hover {
   background-color: #d94f1e;
 }
-
-
-
 /* Novo estilo para tabelnha */
 .servicos-section {
   text-align: center;
@@ -308,8 +296,8 @@ h1 {
 .servicos-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .servico-card {
